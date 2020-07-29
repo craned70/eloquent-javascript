@@ -68,7 +68,7 @@ const prepend = function(value, list) {
     return {value, rest: list};
 };
   
-const nth = (list, n) {
+const nth = (list, n) => {
     if (!list) return undefined;
     else if (n == 0) return list.value;
     else return nth(list.rest, n - 1);
